@@ -10,7 +10,7 @@ set dotenv-load := true
 # set positional-arguments := true
 # foo:
 #   echo justinit
-#   echo
+#   echo 
 
 # Colours
 

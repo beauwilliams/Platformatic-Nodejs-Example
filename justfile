@@ -50,6 +50,8 @@ install-dev *PACKAGES:
     @ni -D {{PACKAGES}}
 start:
     @npx platformatic db start
+create-page-in-db:
+    curl -X POST -H "Content-Type: application/json" -d "{ \"title\": \"Hello Platformatic DB\" }" http://localhost:3042/pages
 
 
 

@@ -10,7 +10,7 @@ set dotenv-load := true
 # set positional-arguments := true
 # foo:
 #   echo justinit
-#   echo 
+#   echo
 
 # Colours
 
@@ -44,7 +44,13 @@ whoami $name:
     echo $name
 install *PACKAGES:
     @#Recipe param as list of packages
-    @npm install {{PACKAGES}}
+    @ni {{PACKAGES}}
+install-dev *PACKAGES:
+    @#Recipe param as list of packages
+    @ni -D {{PACKAGES}}
+start:
+    @npx platformatic db start
+
 
 
 # Hidden Recipes

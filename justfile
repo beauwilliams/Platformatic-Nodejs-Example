@@ -51,7 +51,7 @@ install-dev *PACKAGES:
 start:
     @npx platformatic db start
 get-pages-from-db:
-    curl http://localhost:3042/pages
+    @curl http://localhost:3042/pages
 create-page-in-db:
     curl -X POST -H "Content-Type: application/json" -d "{ \"title\": \"Hello Platformatic DB\" }" http://localhost:3042/pages
 graphql-open-playground:
